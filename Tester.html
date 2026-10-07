@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scanner Test</title>
+<style>
+body {
+font-family: sans-serif;
+padding: 30px;
+font-size:  24px;
+}
+input {
+width: 100%;
+box-sizing: border-box;
+padding: 20px;
+font-size; 28px;
+}
+#result {
+margin-top: 30px;
+font-size: 32px;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h2>Warehouse Sacnner Test</h2>
+<input id="scan" type="text" placeholder="Scan barcode here" autofocus>
+<div id="results"></div>
+<script>
+const scan = document.getElementById("scan");
+const result = document.GetElementById("results");
+
+scan.addEventListener("keydown", function(e) {
+if(e.key === "Enter") {
+result.textContent = "SCANNED: " + scan.value;
+scan.value = ""; } } )
+</script>
+</body>
+</html>
